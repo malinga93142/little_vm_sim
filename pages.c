@@ -79,7 +79,7 @@ int allocate_phys_page(void){
   for (int i = 0; i < NUM_PHYS_PAGES; i++){
     if (!phys_pages_used[i]){
       phys_pages_used[i] = true;
-      memset(&RAM[i+PAGE_SIZE], 0, PAGE_SIZE);
+      memset(&RAM[i*PAGE_SIZE], 0, PAGE_SIZE);
       return i;
     }
   }
