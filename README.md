@@ -179,23 +179,23 @@ It uses a byte-per-page allocation table (one bool/byte per page) (`phys_pages_u
 - Single-threaded operation
 ## Future Improvements
 ### Disk Simulation and Page Swapping
-    - Implement a simulated disk/swap space for page replacement
-    - Add page replacement algorithms (LRU, FIFO, Clock, etc.)
-    - Support swapping pages between RAM and disk when physical memory is full
-    - Track dirty bits to optimize write-back operations
-    - Implement asynchronous disk I/O simulation with latency modeling
+- Implement a simulated disk/swap space for page replacement
+- Add page replacement algorithms (LRU, FIFO, Clock, etc.)
+- Support swapping pages between RAM and disk when physical memory is full
+- Track dirty bits to optimize write-back operations
+- Implement asynchronous disk I/O simulation with latency modeling
 ### Translation Lookaside Buffer (TLB)
-    - Add TLB cache to speed up address translation
-    - Implement TLB hit/miss tracking and statistics
-    - Support configurable TLB size and associativity
-    - Add TLB invalidation on page table updates
-    - Track TLB hit rate for performance analysis
+- Add TLB cache to speed up address translation
+- Implement TLB hit/miss tracking and statistics
+- Support configurable TLB size and associativity
+- Add TLB invalidation on page table updates
+- Track TLB hit rate for performance analysis
 ### Bitmap Optimizations
-    - Replace linear physical page allocation with bitmap-based allocation
-    - Implement efficient bit manipulation for faster free page search
-    - Add buddy system or slab allocator for better memory management
-    - Support contiguous page allocation for large memory blocks
-    - Track fragmentation statistics
+- Replace linear physical page allocation with bitmap-based allocation
+- Implement efficient bit manipulation for faster free page search
+- Add buddy system or slab allocator for better memory management
+- Support contiguous page allocation for large memory blocks
+- Track fragmentation statistics
 ## Author
 
 RK
