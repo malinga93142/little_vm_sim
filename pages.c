@@ -118,6 +118,7 @@ int map_page(uint16_t virt_page, uint16_t phys_page, uint8_t flags){
   page_table.tables[l1]->entries[l2].phys_page 	= phys_page;
   page_table.tables[l1]->entries[l2].flags			=	flags | PTE_VALID;
 	phys_pages_used[phys_page] = true;
+  return 0;
 }
 
 int translate(uint32_t vaddr, uint32_t *out_paddr, bool is_write){
